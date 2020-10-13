@@ -1,0 +1,112 @@
+.row {
+    margin: 2% 0 2% 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+/* HEADER */
+#main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #6c757d !important;
+    padding: 1.5%;
+    color: white;
+}
+.icon-user-plus {
+    color: green;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+.icon-cog-col {
+    color: black;
+}
+
+main {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.container {
+    margin: 2%;
+}
+
+#wrapper-cols {
+    display: flex;
+}
+
+#learn-categories > ul {
+    display: flex;
+    justify-content: center;
+}
+#learn-categories > ul > li > button {
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    height: 40px !important;
+    background-color: #6c757d;
+    padding: 10px;
+}
+#learn-categories > ul > li >button > a {
+    color: white;
+}
+#learn-categories > ul > li >button > a:hover {
+    text-decoration: underline;
+}
+.btn-active {
+    background-color: #ffc107 !important;
+}
+
+.btn-green {
+    background-color: #28a745 !important;
+    width: 35px;
+    height: 40px !important;
+    border-radius: 5px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.knowledge-categories {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.knowledge-categories > section > div {
+    display: flex;
+    justify-content: space-around;
+}
+.question {
+    background-color: #6c757d;
+    color: white
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #6c757d !important;
+    color: white;
+    padding: 1% 0 1% 0
+}
+
+h1 {
+    font-size: 2rem !important;
+}
+h2 {
+    font-size: 2rem !important;
+}
+h3 {
+    font-size: 2rem !important;
+}
+
+
+@media screen and (max-width: 980px) {
+    #wrapper-cols section {
+        width: 400vw;
+    }
+}

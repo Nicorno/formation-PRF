@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+}
+body {
+    /* background: url("../img/matrix.jpg"); */
+    /* opacity: 0.2; */
+    background-color: rgb(223, 219, 202);
+}
+
+#main-nav {
+    width: 100%;
+    background-color: chocolate;
+}
+
+#main-nav > ul {
+    display: flex;
+    flex-flow: nowrap row;
+    padding: 1% 0 1% 2%;
+    /* vertical-align: baseline; */
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    padding-bottom: 2%;
+}
+h2 {
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    margin: 4%;
+    padding: 2%;
+    background-color: #fff;
+    box-shadow: 12px 12px 2px 1px rgba(17, 17, 17, 0.15);
+}
+
+li {
+    list-style: none;
+    line-height: 3rem;
+    z-index: 1;
+}
+
+.icon-right-1 {
+    color: rgb(236, 140, 13);
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(236, 140, 13);
+    font-size: 2rem;
+    opacity: 1;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: chocolate;
+    color: white;
+    padding: 4vw
+}
+.footer > p {
+    text-align: center;
+}
