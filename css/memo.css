@@ -29,7 +29,6 @@ button {
 
 main {
     flex-wrap: nowrap;
-    overflow-x: scroll;
 }
 
 .container {
@@ -37,24 +36,24 @@ main {
 }
 
 #wrapper-cols {
-    display: flex;
+    /* display: flex; */
 }
 
-#learn-categories > ul {
+#btn-categories > ul {
     display: flex;
     justify-content: center;
 }
-#learn-categories > ul > li > button {
+#btn-categories > ul > li > button {
     border-radius: 5px;
     margin: 0 10px 0 10px;
     height: 40px !important;
     background-color: #6c757d;
     padding: 10px;
 }
-#learn-categories > ul > li >button > a {
+#btn-categories > ul > li >button > a {
     color: white;
 }
-#learn-categories > ul > li >button > a:hover {
+#btn-categories > ul > li >button > a:hover {
     text-decoration: underline;
 }
 .btn-active {
@@ -70,20 +69,46 @@ main {
     text-decoration: none;
 }
 
-.knowledge-categories {
+#knowledge-categories {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin: 20px 0;
 }
-
-.knowledge-categories > section > div {
+#knowledge-categories > section {
+    flex-basis: 20%;
+}
+#knowledge-categories > section > header {
     display: flex;
     justify-content: space-around;
 }
-.question {
+.card-question {
+    display: flex;
+    flex-flow: nowrap column;
     background-color: #6c757d;
-    color: white
+    color: white;
+    margin: 10px 0;
+    padding: 15px;
+    justify-content: space-between;
+    border-radius: 7px;
+}
+.card-question > header {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 30%;
+    margin-bottom: 10px;
+}
+.card-question > footer {
+    display: flex;
+    justify-content: space-around;
+}
+.card-question > footer > button {
+    width: 60%;
+    height: 40px !important;
+}
+.card-question > footer > .icon-cog {
+    font-size: 2rem;
+    height: 40px !important;
 }
 
 .footer {
@@ -91,8 +116,16 @@ main {
     justify-content: center;
     background-color: #6c757d !important;
     color: white;
-    padding: 1% 0 1% 0
+    padding: 1% 0 1% 0;
+    position: fixed;
+    background-color: red;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
+
+/* TITLES */
 
 h1 {
     font-size: 2rem !important;
@@ -103,10 +136,38 @@ h2 {
 h3 {
     font-size: 2rem !important;
 }
+h4 {
+    font-size: 2rem !important;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
 
+@media screen and (max-width: 980px) {
+    #knowledge-categories {
+        overflow-x: scroll;
+        width: 500%;
+        /* justify-content: inherit; */
+    }
+    #knowledge-categories > section {
+    }
+    #knowledge-categories > section > header {
+        justify-content: flex-start;
+    }
+    #knowledge-categories > section > article > footer > button {
+        width: 40%;
+    }
+}
 
 @media screen and (max-width: 980px) {
     #wrapper-cols section {
-        width: 400vw;
+        /* width: 400vw; */
     }
 }

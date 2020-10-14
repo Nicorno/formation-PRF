@@ -1,0 +1,33 @@
+$primary-color: #ffc107;
+$secondary_color: #06C435;
+$default_fontsize: 16px;
+
+@mixin border($border_color) {
+    border: 1px solid $border_color;
+}
+
+body {
+    font-size: 20px/$default_fontsize*1em;
+    main > button {
+        @extend %button;
+        background-color: $secondary_color;     
+    }
+    main {
+        nav {
+            ul {
+                li {
+                    @include border(red);
+                    button {
+                        @extend %button;
+                    }
+                }
+            }
+        }
+    }
+}
+
+%button {
+    background-color: $secondary_color;
+    border: none;
+    border-radius: 7px;
+}

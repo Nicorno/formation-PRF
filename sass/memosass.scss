@@ -1,0 +1,187 @@
+// VARIABLE
+
+$primary_color: #6c757d;
+$btn_green: #28a745;
+$btn_yellow: #ffc107;
+$icon_fs: 1.5rem;
+
+// GLOBAL
+.container {
+    margin: 2%;
+}
+.row {
+    margin: 2% 0 2% 0;
+}
+button {
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.btn-active {
+    background-color: $btn_yellow !important;
+    > a {
+        color: black !important;
+    }
+}
+.btn-green {
+    background-color: $btn_green !important;
+    width: 35px;
+    height: 40px !important;
+    margin-right: 15px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+// icons
+.icon {
+    cursor: pointer;
+}
+.icon-active {
+    color: black !important;
+}
+.icon-user-plus {
+    color: $btn_green;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+.icon-header {
+    font-size: 1rem !important;
+}
+.icon-left-circle,
+.icon-right-circle,
+.icon-cog-active,
+.icon-cog {
+    font-size: $icon_fs;
+}
+.icon-cog {
+    color: white;
+}
+
+/* HEADER */
+#main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: $primary_color !important;
+    padding: 1.5%;
+    color: white;
+}
+
+// MAIN
+main {
+    flex-wrap: nowrap;
+    #btn-categories > ul {
+        display: flex;
+        justify-content: center;
+        > li > button {
+            margin: 0 10px 0 10px;
+            height: 40px !important;
+            background-color: $primary_color;
+            padding: 10px;
+        }
+    }
+    .wrapper-cols {
+        #knowledge-categories {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin: 20px 0;
+            @media screen and (max-width: 980px) {
+                overflow-x: scroll;
+                width: 500%;
+            }
+            > section {
+                flex-basis: 20%;
+                > article > footer > button {
+                    @media screen and (max-width: 980px) {
+                        width: 40%;
+                    }
+                }
+                > header {
+                    display: flex;
+                    justify-content: space-around;
+                    @media screen and (max-width: 980px) {
+                        justify-content: flex-start;
+                    }
+                }
+                .card-question {
+                    display: flex;
+                    flex-flow: nowrap column;
+                    background-color: $primary_color;
+                    color: white;
+                    margin: 10px 0;
+                    padding: 15px;
+                    justify-content: space-between;
+                    border-radius: 7px;
+                    > header {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-basis: 30%;
+                        margin-bottom: 10px;
+                    }
+                    > footer {
+                        display: flex;
+                        justify-content: space-around;
+                        > button {
+                            width: 60%;
+                            height: 40px !important;
+                        }
+                        > .icon-cog {
+                            font-size: 2rem;
+                            height: 40px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $primary_color !important;
+    color: white;
+    padding: 1% 0 1% 0;
+    position: fixed;
+    background-color: red;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+// FOOTER
+
+
+/* TITLES */
+
+h1 {
+    font-size: 2rem !important;
+}
+h2 {
+    font-size: 2rem !important;
+}
+h3 {
+    font-size: 2rem !important;
+}
+h4 {
+    font-size: 2rem !important;
+}

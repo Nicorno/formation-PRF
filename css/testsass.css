@@ -1,0 +1,13 @@
+body {
+  font-size: 1.25em; }
+  body main > button {
+    background-color: #06C435; }
+  body main nav ul li {
+    border: 1px solid red; }
+
+body main > button, body main nav ul li button {
+  background-color: #06C435;
+  border: none;
+  border-radius: 7px; }
+
+/*# sourceMappingURL=testsass.css.map */

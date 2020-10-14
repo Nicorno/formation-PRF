@@ -13,13 +13,13 @@
 <body>
    <header>
       <nav id="main-nav">
-         <h1>MeMo</h1>
+         <h1><span class="sr-only">M</span>eMo</h1>
          <div class="icon-user-plus"></div>
       </nav>
    </header>
 
    <main class="container">
-      <section class="row" id="learn-categories">
+      <section class="row" id="btn-categories">
          <ul>
             <li>
                <button class="btn-green"><a href="">+</a></button>
@@ -41,34 +41,65 @@
            
       <div class="wrapper-cols">
          <h2>HTML</h2>
-         <section class="knowledge-categories">
+         <section id="knowledge-categories">
             <section>
-               <div>
+               <header>
                   <button class="btn-green"><a href="">+</a></button>
                   <h3>À apprendre</h3>
-               </div>
-               <div class="question">Question</div>
+               </header>
+               <article class="card-question">
+                  <header>
+                     <div class="icon-left-circle"></div>
+                     <h4>Quels sont les 4 éléments constitutifs</h4>
+                     <div class="icon-right-circle"></div>
+                  </header>
+                  <footer>
+                     <button class="btn-active">Proposer une réponse</button>
+                     <div class="icon-cog"></div>
+                  </footer>
+               </article>
             </section>
             <section>
-               <div>
+               <header>
                   <button class="btn-green"><a href="">+</a></button>
-                  <h2>Je sais un peu</h2>
-               </div>
-               <div class="question">Question</div>
+                  <h3>Je sais un peu</h3>
+               </header>
+               <article class="card-question">
+                  <header>
+                     <div class="icon-left-circle"></div>
+                     <h4>Qui a inventé le web</h4>
+                     <div class="icon-right-circle"></div>
+                  </header>
+                  <footer>
+                     <button class="btn-active">Proposer une réponse</button>
+                     <div class="icon-cog"></div>
+                  </footer>
+               </article>
             </section>
             <section>
-               <div>
+               <header>
                   <button class="btn-green"><a href="">+</a></button>
-                  <h2>Je sais bien</h2>
-               </div>
-               <div class="question">Question</div>
+                  <h3>Je sais bien</h3>
+               </header>
+               <article class="card-question">
+                  <header>
+                     <div class="icon-left-circle"></div>
+                     <h4>Balises principales du HTML</h4>
+                     <div class="icon-right-circle"></div>
+                  </header>
+                  <footer>
+                     <button class="btn-active">Proposer une réponse</button>
+                     <div class="icon-cog"></div>
+                  </footer>
+               </article>
             </section>
             <section>
-               <div>
+               <header>
                   <button class="btn-green"><a href="">+</a></button>
-                  <h2>Je sais parfaitement</h2>
-               </div>
-               <div class="question">Question</div>
+                  <h3>Je sais parfaitement</h3>
+               </header>
+               <article class="card-question"></article>
+               <!-- <div class="question">Question</div> -->
             </section>
          </section>
       </div>
