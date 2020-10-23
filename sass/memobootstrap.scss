@@ -1,0 +1,47 @@
+$icon_fs: 1.5rem;
+nav {
+    border: 2px solid red;
+}
+.terms {
+    border: 2px solid red;
+}
+main {
+    border: 2px solid red;
+}
+
+.cards {
+    margin: 20px 0;
+    > section {
+        @media screen and (max-width: 768px) {
+            width: 95vw;
+            min-width: 95vw;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        // @media screen and (max-width: 768px) {
+        //     width: 95vw !important;
+        //     min-width: 95vw;
+        // }
+        // @media screen and (min-width: 992px) {
+        //     flex-basis: 400vw;
+        //     border: 2px solid red;
+        //     width: 270vw !important;
+        //     // min-width: 95vw;
+        // }
+        // article {
+        //     flex-basis: 15%;
+        //     // width: 95vw !important;
+        //     @media screen and (min-width: 992px) {
+        //         flex-basis: 400vw;
+        //         border: 2px solid yellow;
+        //         width: 95vw !important;
+        //         // min-width: 95vw;
+        //     }
+        // }
+    }
+}
+
+.icon {
+    cursor: pointer;
+    font-size: $icon_fs;
+}

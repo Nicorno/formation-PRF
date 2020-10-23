@@ -1,13 +1,23 @@
 // VARIABLE
 
-$primary_color: #6c757d;
-$btn_green: #28a745;
-$btn_yellow: #ffc107;
-$icon_fs: 1.5rem;
+@import 'variable';
+
+// MIXIN
+@mixin border($color, $width) {
+    border: $width solid $color;
+}
+
+// HÉRITAGE
+%button {
+    @include border(pink, 2px);
+    border-radius: 8px;
+}
 
 // GLOBAL
+
 .container {
     margin: 2%;
+    // @include border(pink, 2px)
 }
 .row {
     margin: 2% 0 2% 0;
@@ -22,6 +32,7 @@ button {
     background-color: $btn_yellow !important;
     > a {
         color: black !important;
+        // @extend %button;
     }
 }
 .btn-green {
@@ -29,6 +40,7 @@ button {
     width: 35px;
     height: 40px !important;
     margin-right: 15px;
+    font-size: 1.5rem;
 }
 a {
     text-decoration: none;
@@ -161,7 +173,6 @@ main {
     color: white;
     padding: 1% 0 1% 0;
     position: fixed;
-    background-color: red;
     bottom: 0px;
     left: 0px;
     right: 0px;

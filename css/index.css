@@ -21,12 +21,12 @@ body {
 
 h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     padding-bottom: 2%;
 }
 h2 {
     color: black;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -63,7 +63,9 @@ a:hover {
     margin-top: 20px;
     background-color: chocolate;
     color: white;
-    padding: 4vw
+    padding: 4vw;
+    bottom: 0;
+    width: 100%;
 }
 .footer > p {
     text-align: center;
